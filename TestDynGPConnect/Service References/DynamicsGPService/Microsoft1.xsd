@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Security" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Security" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://DEV00:48620/Metadata/WCF/Full/schemas.microsoft.com.dynamics.security.2010.01.xsd" namespace="http://schemas.microsoft.com/dynamics/security/2010/01" />
+  <xs:complexType name="RoleKey">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.microsoft.com/dynamics/security/2010/01" base="q1:SecurityKey">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RoleKey" nillable="true" type="tns:RoleKey" />
+  <xs:complexType name="ArrayOfRoleKey">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RoleKey" nillable="true" type="tns:RoleKey" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRoleKey" nillable="true" type="tns:ArrayOfRoleKey" />
+</xs:schema>

@@ -1,0 +1,756 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3B6D2231-C799-43D7-99ED-89AFBE847855}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestDynGPConnect</RootNamespace>
+    <AssemblyName>TestDynGPConnect</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Document.cs" />
+    <Compile Include="DynamicsGP.cs" />
+    <Compile Include="DynConnection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GPInterface.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\DynamicsGPService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="settings.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\DynamicsGPService\DynamicsGP.wsdl" />
+    <None Include="Service References\DynamicsGPService\Microsoft.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DynamicsGPService\Microsoft1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DynamicsGPService\Microsoft2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DynamicsGPService\schemas.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DynamicsGPService\schemas1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DynamicsGPService\schemas2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DynamicsGPService\schemas3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DynamicsGPService\System.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DynamicsGPService\tempuri.wsdl" />
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.Applicant.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ApplicantApplication.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ApplicantApplicationSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ApplicantEducation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ApplicantInterview.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ApplicantInterviewSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ApplicantReference.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ApplicantReferenceSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ApplicantSkill.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ApplicantSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ApplicantTest.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ApplicantWorkHistory.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.BackOfficeRole.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.BackOfficeRoleAssignment.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.Bank.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.Batch.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.BusinessObjectSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.BusinessObjectUserAssignment.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.CashReceipt.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.CashReceiptSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ChangedCurrencyKey.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ChangedCustomerAddressKey.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ChangedCustomerKey.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ChangedInternetAddressKey.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ChangedItemKey.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ChangedPriceLevelKey.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ChangedPricingKey.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ChangedSalesInvoiceKey.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ChangedSalesOrderKey.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ChangedSalespersonKey.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ChangedShippingMethodKey.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ChangedTaxDetailKey.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ChangedTaxScheduleDetailKey.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ChangedUofMScheduleKey.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.Company.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.CompanyAddress.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.CorporateAccount.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.CountryRegionCode.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.Currency.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.CurrencyAccess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.CurrencyPostingAccount.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.Customer.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.CustomerAddress.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.CustomerAddressSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.CustomerReceivablesSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.CustomerSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.DynamicsOnlineConfiguration.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.Employee.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.EmployeeAddress.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.EmployeeAddressSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.EmployeePayCode.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.EmployeePayCodeSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.EmployeeSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.Fee.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.FeeSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.GLAccount.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.GLAccountCategory.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.GLAccountFormat.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.GLAccountSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.GLFixedAllocationAccount.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.GLFixedAllocationAccountSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.GLPostingAccount.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.GLPostingAccountSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.GLTransaction.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.GLTransactionSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.GLUnitAccount.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.GLUnitAccountSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.GLVariableAllocationAccount.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.GLVariableAllocationAccountSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.HRRequisition.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.HRRequisitionSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.InventoriedItem.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.InventoriedItemSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.InventoryAdjustment.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.InventoryAdjustmentSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.InventoryTransfer.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.InventoryTransferSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.InventoryVariance.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.InventoryVarianceSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.Item.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ItemClass.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ItemCurrency.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ItemSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ItemVendor.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ItemVendorSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ItemWarehouse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ItemWarehouseSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.LoggedExceptionData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.LoggedExceptionDataSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ManufacturingOrder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ManufacturingOrderSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.MulticurrencySetup.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.PayablesCreditMemo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.PayablesCreditMemoSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.PayablesDocumentSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.PayablesFinanceCharge.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.PayablesFinanceChargeSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.PayablesInvoice.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.PayablesInvoiceSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.PayablesMiscellaneousCharge.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.PayablesMiscellaneousChargeSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.PayablesReturn.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.PayablesReturnSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.PaymentCardType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.PaymentTerms.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.PlannedOrder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.PlannedOrderSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.Policy.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.PolicySummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.PostedPayablesVendorPayment.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.PostedPayablesVendorPaymentSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.PriceLevel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.Pricing.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.PricingSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.Project.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ProjectBudget.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ProjectBudgetSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ProjectChangeOrder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ProjectChangeOrderSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ProjectContract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ProjectContractSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ProjectEmployeeExpense.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ProjectEmployeeExpenseSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ProjectMiscellaneousLog.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ProjectMiscellaneousLogSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ProjectSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ProjectTimesheet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ProjectTimesheetSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.PurchaseInvoice.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.PurchaseInvoiceSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.PurchaseOrder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.PurchaseOrderSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.PurchaseReceipt.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.PurchaseReceiptSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ReceivablesCreditMemo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ReceivablesCreditMemoSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ReceivablesDebitMemo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ReceivablesDebitMemoSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ReceivablesDocumentSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ReceivablesFinanceCharge.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ReceivablesFinanceChargeSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ReceivablesInvoice.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ReceivablesInvoiceSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ReceivablesReturn.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ReceivablesReturnSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ReceivablesServiceRepair.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ReceivablesServiceRepairSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ReceivablesWarranty.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ReceivablesWarrantySummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ReturnMaterialAuthorization.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ReturnMaterialAuthorizationSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.RoleKey.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.SalesBackorder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.SalesBackorderSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.SalesDocumentSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.SalesFulfillmentOrder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.SalesFulfillmentOrderSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.SalesInvoice.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.SalesInvoiceSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.SalesOrder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.SalesOrderSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.Salesperson.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.SalespersonCommissions.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.SalespersonCommissionsSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.SalespersonSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.SalesProcessHoldSetup.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.SalesQuote.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.SalesQuoteSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.SalesReturn.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.SalesReturnSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.SalesTerritory.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.SalesTerritorySummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.Service.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ServiceCall.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ServiceCallSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ServiceEquipment.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ServiceEquipmentSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ServiceQuote.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ServiceQuoteSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ServiceSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ShippingMethod.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.Skill.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.SkillSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.SkillSetSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.TaxDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.TaxSchedule.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.TaxScheduleDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.Tenant.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.UofMSchedule.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.UofMScheduleSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.UserAssignableBusinessObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.ValidationResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.Vendor.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.VendorAddress.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.VendorAddressSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.VendorManufacturingOrder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.VendorManufacturingOrderSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.VendorPlannedOrder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.VendorPlannedOrderSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.VendorSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.Warehouse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DynamicsGPService\TestDynGPConnect.DynamicsGPService.WarehouseSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\DynamicsGPService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DynamicsGPService\GPService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DynamicsGPService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DynamicsGPService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DynamicsGPService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

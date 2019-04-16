@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/System" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/System" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://DEV00:48620/Metadata/WCF/Full/Microsoft.Dynamics.Common.xsd" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Common" />
+  <xs:import schemaLocation="http://DEV00:48620/Metadata/WCF/Full/Microsoft.Dynamics.GP.xsd" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" />
+  <xs:complexType name="ArrayOfNullableOfDataModificationAction9Rw_PZyuZ">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Common" minOccurs="0" maxOccurs="unbounded" name="DataModificationAction" nillable="true" type="q1:DataModificationAction" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfDataModificationAction9Rw_PZyuZ" nillable="true" type="tns:ArrayOfNullableOfDataModificationAction9Rw_PZyuZ" />
+  <xs:complexType name="ArrayOfNullableOfdateTime">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="dateTime" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfdateTime" nillable="true" type="tns:ArrayOfNullableOfdateTime" />
+  <xs:complexType name="ArrayOfNullableOfint">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="int" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfint" nillable="true" type="tns:ArrayOfNullableOfint" />
+  <xs:complexType name="ArrayOfNullableOfboolean">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="boolean" nillable="true" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfboolean" nillable="true" type="tns:ArrayOfNullableOfboolean" />
+  <xs:complexType name="ArrayOfNullableOfTaxDetailBasefo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="TaxDetailBase" nillable="true" type="q2:TaxDetailBase" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfTaxDetailBasefo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfTaxDetailBasefo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfTaxDetailTypefo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="TaxDetailType" nillable="true" type="q3:TaxDetailType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfTaxDetailTypefo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfTaxDetailTypefo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfServiceTransactionStatefo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="ServiceTransactionState" nillable="true" type="q4:ServiceTransactionState" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfServiceTransactionStatefo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfServiceTransactionStatefo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfServiceCallTypefo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="ServiceCallType" nillable="true" type="q5:ServiceCallType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfServiceCallTypefo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfServiceCallTypefo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfReturnMaterialAuthorizationTypefo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="ReturnMaterialAuthorizationType" nillable="true" type="q6:ReturnMaterialAuthorizationType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfReturnMaterialAuthorizationTypefo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfReturnMaterialAuthorizationTypefo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfGLLedgerTypefo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="GLLedgerType" nillable="true" type="q7:GLLedgerType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfGLLedgerTypefo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfGLLedgerTypefo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfGLTransactionStatefo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="GLTransactionState" nillable="true" type="q8:GLTransactionState" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfGLTransactionStatefo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfGLTransactionStatefo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfGLAccountSummaryTypefo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="GLAccountSummaryType" nillable="true" type="q9:GLAccountSummaryType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfGLAccountSummaryTypefo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfGLAccountSummaryTypefo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfApplicationStatusfo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="ApplicationStatus" nillable="true" type="q10:ApplicationStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfApplicationStatusfo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfApplicationStatusfo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfdecimal">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="decimal" nillable="true" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfdecimal" nillable="true" type="tns:ArrayOfNullableOfdecimal" />
+  <xs:complexType name="ArrayOfNullableOfHRRequisitionStatusfo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="HRRequisitionStatus" nillable="true" type="q11:HRRequisitionStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfHRRequisitionStatusfo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfHRRequisitionStatusfo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfCompensationPeriodfo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="CompensationPeriod" nillable="true" type="q12:CompensationPeriod" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfCompensationPeriodfo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfCompensationPeriodfo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfEmployeePayTypesfo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="EmployeePayTypes" nillable="true" type="q13:EmployeePayTypes" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfEmployeePayTypesfo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfEmployeePayTypesfo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfItemTypefo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="ItemType" nillable="true" type="q14:ItemType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfItemTypefo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfItemTypefo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfInventoriedItemTypefo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="InventoriedItemType" nillable="true" type="q15:InventoriedItemType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfInventoriedItemTypefo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfInventoriedItemTypefo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfFeeTypefo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="FeeType" nillable="true" type="q16:FeeType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfFeeTypefo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfFeeTypefo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfInventoryTransactionStatefo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="InventoryTransactionState" nillable="true" type="q17:InventoryTransactionState" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfInventoryTransactionStatefo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfInventoryTransactionStatefo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfPlannedOrderReplenishmentfo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="PlannedOrderReplenishment" nillable="true" type="q18:PlannedOrderReplenishment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfPlannedOrderReplenishmentfo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfPlannedOrderReplenishmentfo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfManufacturingOrderStatusfo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="ManufacturingOrderStatus" nillable="true" type="q19:ManufacturingOrderStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfManufacturingOrderStatusfo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfManufacturingOrderStatusfo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfManufacturingOrderOutSourcedfo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="ManufacturingOrderOutSourced" nillable="true" type="q20:ManufacturingOrderOutSourced" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfManufacturingOrderOutSourcedfo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfManufacturingOrderOutSourcedfo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfManufacturingOrderPriorityfo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="ManufacturingOrderPriority" nillable="true" type="q21:ManufacturingOrderPriority" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfManufacturingOrderPriorityfo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfManufacturingOrderPriorityfo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfProjectTransactionStatefo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="ProjectTransactionState" nillable="true" type="q22:ProjectTransactionState" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfProjectTransactionStatefo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfProjectTransactionStatefo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfPayablesTransactionStatefo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="PayablesTransactionState" nillable="true" type="q23:PayablesTransactionState" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfPayablesTransactionStatefo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfPayablesTransactionStatefo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfPayablesDocumentTypefo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="PayablesDocumentType" nillable="true" type="q24:PayablesDocumentType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfPayablesDocumentTypefo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfPayablesDocumentTypefo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfPurchaseOrderStatusfo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="PurchaseOrderStatus" nillable="true" type="q25:PurchaseOrderStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfPurchaseOrderStatusfo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfPurchaseOrderStatusfo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfPurchaseTransactionStatefo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="PurchaseTransactionState" nillable="true" type="q26:PurchaseTransactionState" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfPurchaseTransactionStatefo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfPurchaseTransactionStatefo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfReceivablesTransactionStatefo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="ReceivablesTransactionState" nillable="true" type="q27:ReceivablesTransactionState" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfReceivablesTransactionStatefo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfReceivablesTransactionStatefo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfReceivablesDocumentTypefo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="ReceivablesDocumentType" nillable="true" type="q28:ReceivablesDocumentType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfReceivablesDocumentTypefo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfReceivablesDocumentTypefo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfSalesTransactionStatefo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="SalesTransactionState" nillable="true" type="q29:SalesTransactionState" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfSalesTransactionStatefo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfSalesTransactionStatefo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfSalesDocumentTypefo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="SalesDocumentType" nillable="true" type="q30:SalesDocumentType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfSalesDocumentTypefo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfSalesDocumentTypefo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfSalespersonCommissionsDocumentTypefo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="SalespersonCommissionsDocumentType" nillable="true" type="q31:SalespersonCommissionsDocumentType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfSalespersonCommissionsDocumentTypefo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfSalespersonCommissionsDocumentTypefo2IbYCo" />
+  <xs:complexType name="ArrayOfNullableOfSalesCommissionTransactionStatefo2IbYCo">
+    <xs:sequence>
+      <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.GP" minOccurs="0" maxOccurs="unbounded" name="SalesCommissionTransactionState" nillable="true" type="q32:SalesCommissionTransactionState" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNullableOfSalesCommissionTransactionStatefo2IbYCo" nillable="true" type="tns:ArrayOfNullableOfSalesCommissionTransactionStatefo2IbYCo" />
+</xs:schema>

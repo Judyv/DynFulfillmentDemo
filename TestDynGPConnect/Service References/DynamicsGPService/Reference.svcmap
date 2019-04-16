@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="bc47dc5d-bbed-4ea2-87b1-c8028958f2df" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://dev00:48620/Dynamics/GPService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="schemas.xsd" MetadataType="Schema" ID="a18e5117-325f-405e-be62-e499aecee7fa" SourceId="1" SourceUrl="http://dev00:48620/Metadata/WCF/Full/schemas.microsoft.com.dynamics.gp.2010.01.xsd" />
+    <MetadataFile FileName="DynamicsGP.wsdl" MetadataType="Wsdl" ID="d2e17439-d017-49c8-9bc1-9620816db90d" SourceId="1" SourceUrl="http://dev00:48620/Metadata/WCF/Full/schemas.microsoft.com.dynamics.gp.2010.01.wsdl" />
+    <MetadataFile FileName="Microsoft.xsd" MetadataType="Schema" ID="9233bf27-7681-42c2-b271-9c7f399e325e" SourceId="1" SourceUrl="http://dev00:48620/Metadata/WCF/Full/Microsoft.Dynamics.Common.xsd" />
+    <MetadataFile FileName="GPService.disco" MetadataType="Disco" ID="cbe02365-571d-49b4-a086-877c963ab5de" SourceId="1" SourceUrl="http://dev00:48620/Dynamics/GPService?disco" />
+    <MetadataFile FileName="Microsoft1.xsd" MetadataType="Schema" ID="bcfc9d88-5e64-4eaf-8d4a-02c8ebdc5b2c" SourceId="1" SourceUrl="http://dev00:48620/Metadata/WCF/Full/Microsoft.Dynamics.Security.xsd" />
+    <MetadataFile FileName="schemas1.xsd" MetadataType="Schema" ID="00096f0b-2e55-41c6-bcfa-668bbd705c50" SourceId="1" SourceUrl="http://dev00:48620/Metadata/WCF/Full/schemas.microsoft.com.2003.10.Serialization.Arrays.xsd" />
+    <MetadataFile FileName="System.xsd" MetadataType="Schema" ID="f4c7408d-097e-46e5-a006-badc3c23e85c" SourceId="1" SourceUrl="http://dev00:48620/Metadata/WCF/Full/System.xsd" />
+    <MetadataFile FileName="tempuri.wsdl" MetadataType="Wsdl" ID="5b17b138-1a76-4e65-8724-bc59ba44798f" SourceId="1" SourceUrl="http://dev00:48620/Metadata/WCF/Full/tempuri.org.wsdl" />
+    <MetadataFile FileName="Microsoft2.xsd" MetadataType="Schema" ID="f9a5b9e5-8def-4f6b-931d-bbc8269d73ef" SourceId="1" SourceUrl="http://dev00:48620/Metadata/WCF/Full/Microsoft.Dynamics.GP.xsd" />
+    <MetadataFile FileName="schemas2.xsd" MetadataType="Schema" ID="9d0ab71c-7349-43ba-a0f0-d4aa9a7c176d" SourceId="1" SourceUrl="http://dev00:48620/Metadata/WCF/Full/schemas.microsoft.com.dynamics.security.2010.01.xsd" />
+    <MetadataFile FileName="schemas3.xsd" MetadataType="Schema" ID="56e40bd4-e7f4-4daa-a6e1-db4caae107da" SourceId="1" SourceUrl="http://dev00:48620/Metadata/WCF/Full/schemas.microsoft.com.2003.10.Serialization.xsd" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

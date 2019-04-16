@@ -1,0 +1,208 @@
+<WriteShipment GPIdentity="" GPIdentityType="SPN" DoBackOrder="true">
+  <SourceDocument DocKey1="TST0034" DocumentKey1="TST0034" DocKey2="TST0034" DocumentKey2="TST0034" DocType="Sales Trx" DocumentType="Sales Trx" SourceCompanyName="Fabrikam, Inc." WriteBackStatus="Completed" ExtensionWriteBackStatus="Not supported" SourceID="47" eCommerceName="" eCommerceCompanyName="" _CombinedKey="TST0034|@|Order" _DocTypeRequireLineItems="OPTION" AllocateBy="1">
+    <FreightInfo>
+      <Shipment>
+        <Sender ID="" NAME="TWO, Inc. Warehouse" CONTACT="Nagata, Suanne" ADDRESS1="4300 West Elm St." ADDRESS2="comp adr 2" ADDRESS3="comp adr 3" CITY="Chicago" STATE="IL" ZIP="606014300" COUNTRY="US" PHONE="3125550101" EMAIL="" RESIDENTIAL="False"/>
+        <Recipient ID="AARONFIT0001" NAME="Aaron Fitz Electrical BBB" CONTACT="Bob Fitz" ADDRESS1="4 Fernwood Drive" ADDRESS2="Suite 1234566" ADDRESS3="Building 2" CITY="test" STATE="CT" ZIP="06070" COUNTRY="US" PHONE="3125550100" EMAIL="" RESIDENTIAL="False"/>
+        <BillTo ID="" NAME="TWO, Inc. Warehouse" CONTACT="Nagata, Suanne" ADDRESS1="4300 West Elm St." ADDRESS2="comp adr 2" ADDRESS3="comp adr 3" CITY="Chicago" STATE="IL" ZIP="606014300" COUNTRY="US" PHONE="3125550101" EMAIL="" RESIDENTIAL="False"/>
+        <NameValue Name="CarrierType" Value="1" ValueType="Shipment"/>
+        <NameValue Name="TrackingNumber" Value="1ZV69W420390243468" ValueType="Shipment"/>
+        <NameValue Name="BOLNumber" Value="" ValueType="Shipment"/>
+        <NameValue Name="PRONumber" Value="" ValueType="Shipment"/>
+        <NameValue Name="ID" Value="1ZV69W420390243468" ValueType="Shipment"/>
+        <NameValue Name="MasterTrackingID" Value="1ZV69W420390243468" ValueType="Shipment"/>
+        <NameValue Name="Status" Value="Delete" ValueType="Shipment"/>
+        <NameValue Name="DeltaFreight" Value="-20.82" ValueType="Shipment"/>
+        <NameValue Name="Freight" Value="20.82" ValueType="Shipment"/>
+        <NameValue Name="Currency" Value="USD" ValueType="Shipment"/>
+        <NameValue Name="CODAmount" Value="0.00" ValueType="Shipment"/>
+        <NameValue Name="COD Freight Tax Amount" Value="0.00" ValueType="Shipment"/>
+        <NameValue Name="COD Base Amount" Value="0.00" ValueType="Shipment"/>
+        <NameValue Name="Declared Value" Value="0.00" ValueType="Shipment"/>
+        <NameValue Name="Weight" Value="4.95" ValueType="Shipment"/>
+        <NameValue Name="Service" Value="UPS® Ground" ValueType="Shipment"/>
+        <NameValue Name="Service Code" Value="03" ValueType="Shipment"/>
+        <NameValue Name="SCAC" Value="UPS" ValueType="Shipment"/>
+        <NameValue Name="Carrier" Value="UPS" ValueType="Shipment"/>
+        <NameValue Name="CarrierInterfaceID" Value="UPS" ValueType="Shipment"/>
+        <NameValue Name="ReadyDate" Value="04/12/2019" ValueType="Shipment"/>
+        <NameValue Name="Delivery Date" Value="04/12/2019" ValueType="Shipment"/>
+        <NameValue Name="Order Number" Value="TST0034" ValueType="Shipment"/>
+        <NameValue Name="eCommerceOrderNumber" Value="" ValueType="Shipment"/>
+        <NameValue Name="Customer Number" Value="AARONFIT0001" ValueType="Shipment"/>
+        <NameValue Name="PO Number" Value="983748" ValueType="Shipment"/>
+        <NameValue Name="Department" Value="" ValueType="Shipment"/>
+        <NameValue Name="Shipment ID" Value="2212" ValueType="Shipment"/>
+        <NameValue Name="ReturnShipment" Value="N" ValueType="Shipment"/>
+        <NameValue Name="Freight Billing" Value="S" ValueType="Shipment"/>
+        <NameValue Name="Freight Account" Value="V69W42" ValueType="Shipment"/>
+        <NameValue Name="User ID" Value="admin" ValueType="Shipment"/>
+        <NameValue Name="Shipment User Defined 1" Value="" ValueType="Shipment"/>
+        <NameValue Name="Shipment User Defined 2" Value="" ValueType="Shipment"/>
+        <NameValue Name="Shipment User Defined 3" Value="" ValueType="Shipment"/>
+        <NameValue Name="Shipment User Defined 4" Value="" ValueType="Shipment"/>
+        <NameValue Name="Shipment User Defined 5" Value="" ValueType="Shipment"/>
+        <NameValue Name="User Defined 1" Value="" ValueType="Shipment"/>
+        <NameValue Name="User Defined 2" Value="" ValueType="Shipment"/>
+        <NameValue Name="User Defined 3" Value="" ValueType="Shipment"/>
+        <NameValue Name="User Defined 4" Value="" ValueType="Shipment"/>
+        <NameValue Name="User Defined 5" Value="" ValueType="Shipment"/>
+        <NameValue Name="Skip Write-Back" Value="False" ValueType="Shipment"/>
+        <NameValue Name="InternalID" Value="2212" ValueType="Shipment"/>
+        <NameValue Name="Applied Charges Freight Charges" Value="20.82" ValueType="Shipment"/>
+        <NameValue Name="Applied Charges Accessorial Charges" Value="0.00" ValueType="Shipment"/>
+        <NameValue Name="Applied Charges Handling Fee" Value="0.00" ValueType="Shipment"/>
+        <NameValue Name="Applied Charges Total" Value="20.82" ValueType="Shipment"/>
+        <NameValue Name="Applied Charges Freight Cost" Value="20.82" ValueType="Shipment"/>
+        <NameValue Name="Applied Charges Fuel Surcharge" Value="0.00" ValueType="Shipment"/>
+        <NameValue Name="List Charges Freight Charges" Value="25.88" ValueType="Shipment"/>
+        <NameValue Name="List Charges Surcharges" Value="1.88" ValueType="Shipment"/>
+        <NameValue Name="List Charges Discounts" Value="0.00" ValueType="Shipment"/>
+        <NameValue Name="List Charges Accessorial Charges" Value="0.00" ValueType="Shipment"/>
+        <NameValue Name="List Charges Misc Charges" Value="0.00" ValueType="Shipment"/>
+        <NameValue Name="List Charges Total" Value="27.76" ValueType="Shipment"/>
+        <NameValue Name="Contract Charges Freight Charges" Value="20.82" ValueType="Shipment"/>
+        <NameValue Name="Contract Charges Surcharges" Value="0.00" ValueType="Shipment"/>
+        <NameValue Name="Contract Charges Discounts" Value="0.00" ValueType="Shipment"/>
+        <NameValue Name="Contract Charges Accessorial Charges" Value="0.00" ValueType="Shipment"/>
+        <NameValue Name="Contract Charges Misc Charges" Value="0.00" ValueType="Shipment"/>
+        <NameValue Name="Contract Charges Total" Value="20.82" ValueType="Shipment"/>
+      </Shipment>
+    </FreightInfo>
+    <TrackInfo TrackingInfo="" StartDelimiter="Shipped on 4/12/2019 " EndDelimiter="End Shipment(s)"/>
+    <OrderItems>
+      <OrderItem>
+        <NameValue Name="ItemNumber" Value="TEST03" ValueType="Shipment"/>
+        <NameValue Name="UOM" Value="EACH" ValueType="Shipment"/>
+        <NameValue Name="Extra Key1" Value="16384" ValueType="Shipment"/>
+        <NameValue Name="Extra Key2" Value="0" ValueType="Shipment"/>
+        <NameValue Name="Extra Key3" Value="" ValueType="Shipment"/>
+        <NameValue Name="eCommerceItemNumber" Value="" ValueType="Shipment"/>
+        <NameValue Name="DeltaShipQty" Value="-1" ValueType="Shipment"/>
+        <NameValue Name="User Defined 1" Value="" ValueType="Shipment"/>
+        <NameValue Name="User Defined 2" Value="" ValueType="Shipment"/>
+        <NameValue Name="User Defined 3" Value="" ValueType="Shipment"/>
+        <NameValue Name="User Defined 4" Value="" ValueType="Shipment"/>
+        <NameValue Name="User Defined 5" Value="" ValueType="Shipment"/>
+        <NameValue Name="Qty Fulfilled" Value="1" ValueType="Source"/>
+      </OrderItem>
+      <OrderItem>
+        <NameValue Name="ItemNumber" Value="WIRE-SCD-0001" ValueType="Shipment"/>
+        <NameValue Name="UOM" Value="Foot" ValueType="Shipment"/>
+        <NameValue Name="Extra Key1" Value="16384" ValueType="Shipment"/>
+        <NameValue Name="Extra Key2" Value="16384" ValueType="Shipment"/>
+        <NameValue Name="Extra Key3" Value="" ValueType="Shipment"/>
+        <NameValue Name="eCommerceItemNumber" Value="" ValueType="Shipment"/>
+        <NameValue Name="DeltaShipQty" Value="-2" ValueType="Shipment"/>
+        <NameValue Name="User Defined 1" Value="0.3500" ValueType="Shipment"/>
+        <NameValue Name="User Defined 2" Value="WIRE-SCD-0001" ValueType="Shipment"/>
+        <NameValue Name="User Defined 3" Value="0.0000" ValueType="Shipment"/>
+        <NameValue Name="User Defined 4" Value="0.1600" ValueType="Shipment"/>
+        <NameValue Name="User Defined 5" Value="test2" ValueType="Shipment"/>
+        <NameValue Name="Order Line Unit Price" Value="0.3500" ValueType="Shipment"/>
+        <NameValue Name="Item Field 2" Value="WIRE-SCD-0001" ValueType="Shipment"/>
+        <NameValue Name="Item Field 3" Value="0.0000" ValueType="Shipment"/>
+        <NameValue Name="Item Field 4" Value="0.1600" ValueType="Shipment"/>
+        <NameValue Name="Item Field 5" Value="test2" ValueType="Shipment"/>
+        <NameValue Name="Qty Fulfilled" Value="2" ValueType="Source"/>
+        <Distributions Type="2"/>
+      </OrderItem>
+    </OrderItems>
+  </SourceDocument>
+  <BatchName>&lt;Do Not Assign&gt;</BatchName>
+  <Settings>
+    <NameValue Name="OverrideFreight" Value="First"/>
+    <NameValue Name="DeleteBatch" Value="&lt;Do Not Assign&gt;"/>
+    <NameValue Name="ReplaceFreightOnly" Value="True"/>
+    <NameValue Name="RetainFreightAlways" Value="False"/>
+    <NameValue Name="ReplaceFreightAlways" Value="False"/>
+    <NameValue Name="UpdateShipPackTables" Value="False"/>
+    <NameValue Name="SaveShipPackTables" Value="90"/>
+    <NameValue Name="WriteRateQuote" Value="Always"/>
+    <NameValue Name="UpdateShipDate" Value="False"/>
+    <NameValue Name="UpdateFreightFlag" Value="Y"/>
+    <NameValue Name="UpdateTrackingFlag" Value="Y"/>
+    <NameValue Name="IncludeNonInventory" Value="True"/>
+    <NameValue Name="IncludeKitComponents" Value="True"/>
+    <NameValue Name="IncludeMiscCharges" Value="True"/>
+    <NameValue Name="IncludeServices" Value="True"/>
+    <NameValue Name="IncludeFlatFee" Value="True"/>
+    <NameValue Name="DoDistribution" Value="True"/>
+  </Settings>
+  <Packaging>
+    <Package>
+      <Row Name="Package ID" Value="-1" ValueType="Shipment"/>
+      <Row Name="Package Number" Value="1" ValueType="Shipment"/>
+      <Row Name="Package Quantity" Value="1" ValueType="Shipment"/>
+      <Row Name="Packaging" Value="Big Box" ValueType="Shipment"/>
+      <Row Name="Freight Class" Value="65" ValueType="Shipment"/>
+      <Row Name="Length" Value="15" ValueType="Shipment"/>
+      <Row Name="Height" Value="20" ValueType="Shipment"/>
+      <Row Name="Width" Value="15" ValueType="Shipment"/>
+      <Row Name="Calculated Weight" Value="4.95" ValueType="Shipment"/>
+      <Row Name="Actual Weight" Value="4.95" ValueType="Shipment"/>
+      <Row Name="Packaging Weight" Value="0.05" ValueType="Shipment"/>
+      <Row Name="Actual Weight in UOM" Value="4.95" ValueType="Shipment"/>
+      <Row Name="Weight UOM" Value="lbs" ValueType="Shipment"/>
+      <Row Name="Package Content" Value="Type description for Class 65 here" ValueType="Shipment"/>
+      <Row Name="License Plate" Value="" ValueType="Shipment"/>
+      <Row Name="Package Comment" Value="" ValueType="Shipment"/>
+      <Row Name="Tracking Number" Value="1ZV69W420390243468" ValueType="Shipment"/>
+      <Row Name="Billed Weight" Value="33.00" ValueType="Shipment"/>
+      <Row Name="Charges" Value="20.82" ValueType="Shipment"/>
+      <Row Name="User Defined 1" Value="" ValueType="Shipment"/>
+      <Row Name="User Defined 2" Value="" ValueType="Shipment"/>
+      <Row Name="User Defined 3" Value="" ValueType="Shipment"/>
+      <Row Name="User Defined 4" Value="" ValueType="Shipment"/>
+      <Row Name="User Defined 5" Value="" ValueType="Shipment"/>
+      <Row Name="Freight Billing" Value="S" ValueType="Shipment"/>
+      <Row Name="Freight Account" Value="V69W42" ValueType="Shipment"/>
+      <Row Name="Declared Value" Value="0.00" ValueType="Shipment"/>
+      <Row Name="COD Type" Value="None" ValueType="Shipment"/>
+      <Row Name="COD Amount" Value="0.00" ValueType="Shipment"/>
+      <Row Name="Hazardous" Value="N" ValueType="Shipment"/>
+      <Row Name="Handling Fee" Value="0.00" ValueType="Shipment"/>
+      <Row Name="Zone" Value="" ValueType="Shipment"/>
+      <Row Name="SSCC" Value="002345678912031180" ValueType="Shipment"/>
+      <Row Name="Package Type" Value="Box" ValueType="Shipment"/>
+      <Row Name="Applied Charges Freight Charges" Value="20.82" ValueType="Shipment"/>
+      <Row Name="Applied Charges Accessorial Charges" Value="0.00" ValueType="Shipment"/>
+      <Row Name="Applied Charges Handling Fee" Value="0.00" ValueType="Shipment"/>
+      <Row Name="Applied Charges Total" Value="20.82" ValueType="Shipment"/>
+      <Row Name="Applied Charges Freight Cost" Value="20.82" ValueType="Shipment"/>
+      <Row Name="Applied Charges Fuel Surcharge" Value="0.00" ValueType="Shipment"/>
+      <Row Name="List Charges Freight Charges" Value="25.88" ValueType="Shipment"/>
+      <Row Name="List Charges Surcharges" Value="1.88" ValueType="Shipment"/>
+      <Row Name="List Charges Discounts" Value="0.00" ValueType="Shipment"/>
+      <Row Name="List Charges Accessorial Charges" Value="0.00" ValueType="Shipment"/>
+      <Row Name="List Charges Misc Charges" Value="0.00" ValueType="Shipment"/>
+      <Row Name="List Charges Total" Value="27.76" ValueType="Shipment"/>
+      <Row Name="Contract Charges Freight Charges" Value="20.82" ValueType="Shipment"/>
+      <Row Name="Contract Charges Surcharges" Value="0.00" ValueType="Shipment"/>
+      <Row Name="Contract Charges Discounts" Value="0.00" ValueType="Shipment"/>
+      <Row Name="Contract Charges Accessorial Charges" Value="0.00" ValueType="Shipment"/>
+      <Row Name="Contract Charges Misc Charges" Value="0.00" ValueType="Shipment"/>
+      <Row Name="Contract Charges Total" Value="20.82" ValueType="Shipment"/>
+      <PackageContents>
+        <Contents>
+          <Row Name="Package Content Quantity" Value="1" ValueType="Shipment"/>
+          <Row Name="Package Content UOM" Value="EACH" ValueType="Shipment"/>
+          <Row Name="Package Content Item Number" Value="TEST03" ValueType="Shipment"/>
+          <Row Name="Package Content Sales Order" Value="TST0034" ValueType="Shipment"/>
+          <Row Name="Package Content Extra Key1" Value="16384" ValueType="Shipment"/>
+          <Row Name="Package Content Extra Key2" Value="0" ValueType="Shipment"/>
+          <Row Name="Package Content Extra Key3" Value="" ValueType="Shipment"/>
+        </Contents>
+        <Contents>
+          <Row Name="Package Content Quantity" Value="2" ValueType="Shipment"/>
+          <Row Name="Package Content UOM" Value="Foot" ValueType="Shipment"/>
+          <Row Name="Package Content Item Number" Value="WIRE-SCD-0001" ValueType="Shipment"/>
+          <Row Name="Package Content Sales Order" Value="TST0034" ValueType="Shipment"/>
+          <Row Name="Package Content Extra Key1" Value="16384" ValueType="Shipment"/>
+          <Row Name="Package Content Extra Key2" Value="16384" ValueType="Shipment"/>
+          <Row Name="Package Content Extra Key3" Value="" ValueType="Shipment"/>
+        </Contents>
+      </PackageContents>
+    </Package>
+  </Packaging>
+</WriteShipment>

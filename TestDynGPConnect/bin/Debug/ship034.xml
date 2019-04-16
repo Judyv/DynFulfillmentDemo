@@ -1,0 +1,53 @@
+<WriteShipment GPIdentity="" GPIdentityType="SPN" DoBackOrder="true">
+  <SourceDocument DocKey1="TST0034" DocumentKey1="TST0034" DocKey2="TST0034" DocumentKey2="TST0034" DocType="Sales Trx" DocumentType="Sales Trx" SourceCompanyName="Fabrikam, Inc." WriteBackStatus="Not updated" ExtensionWriteBackStatus="Not supported" SourceID="47" eCommerceName="" eCommerceCompanyName="" _CombinedKey="TST0034|@|Order" _DocTypeRequireLineItems="OPTION" AllocateBy="1">
+    <FreightInfo>
+      <Shipment>
+        <NameValue Name="Status" Value="Add" ValueType="Shipment"/>
+      </Shipment>
+    </FreightInfo>
+    <OrderItems>
+      <OrderItem>
+        <NameValue Name="ItemNumber" Value="TEST03" ValueType="Shipment"/>
+        <NameValue Name="UOM" Value="EACH" ValueType="Shipment"/>
+        <NameValue Name="Extra Key1" Value="16384" ValueType="Shipment"/>
+        <NameValue Name="Extra Key2" Value="0" ValueType="Shipment"/>
+        <NameValue Name="Extra Key3" Value="" ValueType="Shipment"/>
+        <NameValue Name="DeltaShipQty" Value="1" ValueType="Shipment"/>
+        <NameValue Name="Qty Fulfilled" Value="1" ValueType="Source"/>
+      </OrderItem>
+      <OrderItem>
+        <NameValue Name="ItemNumber" Value="WIRE-SCD-0001" ValueType="Shipment"/>
+        <NameValue Name="UOM" Value="Foot" ValueType="Shipment"/>
+        <NameValue Name="Extra Key1" Value="16384" ValueType="Shipment"/>
+        <NameValue Name="Extra Key2" Value="16384" ValueType="Shipment"/>
+        <NameValue Name="Extra Key3" Value="" ValueType="Shipment"/>
+        <NameValue Name="DeltaShipQty" Value="2" ValueType="Shipment"/>
+        <NameValue Name="Qty Fulfilled" Value="2" ValueType="Source"/>
+        <Distributions Type="2">
+          <Distribution ID="LOT1" Qty="2"/>
+        </Distributions>
+      </OrderItem>
+    </OrderItems>
+  </SourceDocument>
+  <BatchName>AUG31</BatchName>
+  <Settings>
+    <NameValue Name="OverrideFreight" Value="First"/>
+    <NameValue Name="DeleteBatch" Value="&lt;Do Not Assign&gt;"/>
+    <NameValue Name="ReplaceFreightOnly" Value="True"/>
+    <NameValue Name="RetainFreightAlways" Value="False"/>
+    <NameValue Name="ReplaceFreightAlways" Value="False"/>
+    <NameValue Name="UpdateShipPackTables" Value="False"/>
+    <NameValue Name="SaveShipPackTables" Value="90"/>
+    <NameValue Name="WriteRateQuote" Value="Always"/>
+    <NameValue Name="UpdateShipDate" Value="False"/>
+    <NameValue Name="UpdateFreightFlag" Value="Y"/>
+    <NameValue Name="UpdateTrackingFlag" Value="Y"/>
+    <NameValue Name="IncludeNonInventory" Value="True"/>
+    <NameValue Name="IncludeKitComponents" Value="True"/>
+    <NameValue Name="IncludeMiscCharges" Value="True"/>
+    <NameValue Name="IncludeServices" Value="True"/>
+    <NameValue Name="IncludeFlatFee" Value="True"/>
+    <NameValue Name="DoDistribution" Value="True"/>
+  </Settings>
+</WriteShipment>
+
